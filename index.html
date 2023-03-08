@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 20px;
+            font-weight: 800;
+            font-style: oblique;
+            margin-left: 20px;
+        }
+        h1{
+            color: brown;
+            margin-top: 10px;
+        }
+        fieldset{
+            display: flex;
+            width: 50%;
+        }
+        .input-row-left{
+            flex-basis: 50%;
+            
+        }
+        .input-row-right{
+            flex-basis: 50%;
+        }
+        label{
+            margin-bottom: 0px;
+            display: block;
+            color: brown;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 5px;
+            width: 90%;
+            outline: none;
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            color: brown;    
+        }
+        button:hover{
+            background:burlywood;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <h1>Please Fill Out This Form</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend>My Bio</legend>
+            <div class="input-row-left">
+                <div class="input-group">
+                    <label for="#">Name</label>
+                    <input type="text" placeholder="John Smith" required>
+                </div>
+                <div class="input-group">
+                    <label for="#">Phone</label>
+                    <input type="text" placeholder="070**********" required>
+                </div>
+                <div class="input-group">
+                    <label for="#">Gender</label>
+                    <select name="gender" id="#" >
+                        <option value="#" >Select</option>
+                        <option value="#">Male</option>
+                        <option value="#">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="#">Country</label>
+                    <input type="text" placeholder="Germany" required>
+                </div>
+            </div>
+            <div class="input-row-right">
+                <div class="input-group">
+                    <label for="#">Email</label>
+                    <input type="email" name="email" id="email" placeholder="sidehussle@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="#">Username</label>
+                    <input type="text" placeholder="Tossyn123" required>
+                </div>
+                <div class="input-group">
+                    <label for="#">Password</label>
+                    <input type="password" name="password" placeholder="***********" required >
+                </div>
+                <div class="input-group">
+                    <label for="#">Confirm Password</label>
+                    <input type="password" name="password" placeholder="***********" required >
+                </div>
+            </div>
+
+        </fieldset>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
